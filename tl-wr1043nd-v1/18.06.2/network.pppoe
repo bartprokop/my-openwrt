@@ -1,0 +1,14 @@
+#
+# opkg update
+# opkg install ppp kmod-pppoe ppp-mod-pppoe
+# Replace proto 'dhcp' with 'pppoe'
+#
+
+config interface 'wan'
+        option ifname 'eth0.2'
+        option proto 'pppoe'
+        option username 'user'
+        option password 'pass'
+	list dns '8.8.8.8'
+	list dns '8.8.4.4'
+
