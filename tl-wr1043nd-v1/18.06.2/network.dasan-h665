@@ -1,0 +1,10 @@
+#
+# Even when DASAN H665 is in bridge mode, you can still access it on 192.168.55.1
+#
+
+config interface 'modem'
+        option ifname 'eth0.2'
+        option proto 'static'
+        option ipaddr '192.168.55.102'
+        option netmask '255.255.255.0'
+
